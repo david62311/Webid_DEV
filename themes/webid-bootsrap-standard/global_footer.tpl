@@ -51,15 +51,7 @@
 <div style="text-align:center; margin:5px 0px; font-size:9px;"> <small><span class="muted">{HEADERCOUNTER}</span></small> </div>
 <div class="copyright"> <small><span class="muted">{L_COPY}</span></small> </div>
 <div class="copyright" style="margin-bottom:10px;">
-		<!--
-			We request you retain the full copyright notice below including the link to www.webidsupport.com.
-			This not only gives respect to the large amount of time given freely by the developers
-			but also helps build interest, traffic and use of WeBid. If you (honestly) cannot retain
-			the full copyright we ask you at least leave in place the "Powered by WeBid" line, with
-			"WeBid" linked to www.webidsupport.com. If you must remove thte copyright message pelase make
-            a donation at http://www.webidsupport.com/donate.php to help pay for future developments
-		-->
-	<small><span class="muted">	Powered by <a href="http://www.webidsupport.com/">WeBid</a> &copy; 2008 - 2011 <a href="http://www.webidsupport.com/">WeBid</a></span></small>
+	<small><span class="muted">	Powered by <a href="http://www.qbil.nl/">Qbil Auction Platform</a> &copy; 2013 <a href="http://www.qbil.nl/">Qbil</a></span></small>
 	</div>
 </div>
 <script type="text/javascript">
