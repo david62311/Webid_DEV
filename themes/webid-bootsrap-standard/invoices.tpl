@@ -6,7 +6,7 @@
     <td style="width: 30%;">{L_018}</td>
     <td style="width: 30%;">{L_847}</td>
     <td style="width: 20%;">{L_319}</td>
-    <td style="width: 20%;">{L_560}</td>
+    <td style="width: 20%;">{L_766}</td>
   </tr>
 <!-- BEGIN topay -->
 <tr>
