@@ -68,6 +68,11 @@
         <input type="hidden" name="pfval" value="{to_pay.ID}">
         <input type="submit" name="Pay" value="{L_756}" class="pay btn btn-primary">
       </form></td>
+    <td style="text-align: center;" class="alert"><form name="" method="post" action="{SITEURL}order_print.php?id={topay.INVOICE}" id="fees" style="margin:0;">
+        <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
+        <input type="hidden" name="pfval" value="{to_pay.ID}">
+        <input type="submit" name="Invoice" value="{L_766}" class="btn btn-info">
+      </form></td> 
   </tr>
   <!-- END to_pay -->
 </table>
