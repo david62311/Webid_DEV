@@ -49,7 +49,8 @@
     <td style="width: 15%;">{L_847}</td>
     <td style="width: 15%;">{L_319}</td>
     <td style="width: 15%;">{L_189}</td>
-    <td>&nbsp;</td>
+    <td style="width: 15%;">{L_756}</td>
+    <td style="width: 15%;">{L_766}</td>
   </tr>
   <!-- BEGIN to_pay -->
   <tr>
