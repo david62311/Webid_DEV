@@ -16,9 +16,11 @@
 	</td>
 	<td>{topay.INFO}</td>
 	<td style="text-align: left;">{topay.TOTAL}</td>
-	<td style="text-align: left;">
-		<!-- IF topay.PAID -->{L_898}<br><!-- ENDIF --><a href="{SITEURL}order_print.php?id={topay.INVOICE}">{L_1058}</a>
-	</td>
+	<td style="text-align: center;" class="alert"><form name="" method="post" action="{SITEURL}order_print.php?id={topay.INVOICE}" id="fees" style="margin:0;">
+        <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
+        <input type="hidden" name="pfval" value="{to_pay.ID}">
+        <input type="submit" name="Invoice" value="{L_1058}" class="btn btn-primary">
+      </form></td> 
 </tr>
 <!-- END topay -->
 </table> 
