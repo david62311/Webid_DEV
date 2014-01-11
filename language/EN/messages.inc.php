@@ -1042,8 +1042,8 @@ $MSG['1053'] = 'Total:';
 $MSG['1054'] = 'Shipping Method';
 $MSG['1055'] = 'Payment Method';
 $MSG['1056'] = 'You didn\'t select any order to print Packingslip.';
-$MSG['1057'] = 'List invoices';
-$MSG['1058'] = 'View invoice';
+$MSG['1057'] = 'List Invoices';
+$MSG['1058'] = 'View Invoice';
 $MSG['1059'] = 'Invoice List';
 $MSG['1060'] = 'Invalid Invoice.';
 
