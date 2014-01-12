@@ -1,4 +1,4 @@
-<!-- INCLUDE user_menu_header.tpl -->
+<!-- INCLUDE user_menu.tpl -->
 <div class="span9">
 <legend>{L_766}</legend>
 <table class="table table-bordered table-condensed table-striped">
