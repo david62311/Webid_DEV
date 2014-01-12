@@ -157,7 +157,7 @@ $template->assign_vars(array(
 		'WINNER_ADDRESS' => $winner_address,
 		'AUCTION_ID' => $data['auc_id'],
 		'SHIPPING_METHOD' => (empty($data['shipping_terms'])) ? strtoupper($MSG['000']) : $data['shipping_terms'],
-		'INVOICE_DATE' => gmdate('d/m/Y', $data['date'] + $system->tdiff),
+		'INVOICE_DATE' => gmdate('m/d/Y', $data['date'] + $system->tdiff),
 		'SALE_ID' => (($auction) ? 'AUC' : 'FEE') . $data['id'],
 		// tax start
 		'TAX' => $vat . '%',
