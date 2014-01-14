@@ -205,9 +205,9 @@
 <!-- ENDIF -->
 
 <br>
-<div style="position: absolute; bottom: 25%; right: 20%;">
-    <form><input id="printpagebutton" type="button" value="Print this page" onclick="printpage()"/></form>
-</div>
+<div style="position: absolute; right: 20%;">
+        <form><input id="printpagebutton" type="button" value="Print this page" onclick="printpage()"/></form>
+		</div>
 
 <script type="text/javascript">
     function printpage() {
