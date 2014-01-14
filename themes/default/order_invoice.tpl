@@ -45,9 +45,6 @@
           <td valign="top" width="350" align="right">
             <table class="pageHeading-invoice2" width="200" border="0">
               <tbody><tr>
-              <tr>         
-              	<td><input id="printpagebutton" type="button" value="Print this page" onclick="printpage()"/></td>
-              </tr>
                 <td><b>{L_1041}: {SALE_ID}</b></td>
               </tr>
               <tr>
@@ -206,6 +203,11 @@
 <h4>{L_1060}</h4>
 </div>
 <!-- ENDIF -->
+
+<br>
+<div style="position: absolute; bottom: 25%; right: 20%;">
+    <form><input id="printpagebutton" type="button" value="Print this page" onclick="printpage()"/></form>
+</div>
 
 <script type="text/javascript">
     function printpage() {
