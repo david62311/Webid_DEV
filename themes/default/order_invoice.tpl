@@ -159,11 +159,11 @@
 			<td class="smallText" align="right">{TOTAL}</td>
 			</tr>
 			<tr>
-            <td class="smallText" align="right">{L_1051}</td>
+            <td class="smallText" align="right">{L_319}</td>
 			<td class="smallText" align="right">{SHIPPING_COST}</td>
 			</tr>
 			<tr>
-            <td class="smallText" align="right">{L_1052}</td>
+            <td class="smallText" align="right">{L_1045}</td>
 			<td class="smallText" align="right">{VAT_TOTAL}</td>
 			</tr>
 			<tr>
