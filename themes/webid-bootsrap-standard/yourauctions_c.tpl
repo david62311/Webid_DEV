@@ -1,31 +1,23 @@
 <script type="text/javascript">
-
 $(document).ready(function() {
-
 	var relist_fee = {RELIST_FEE_NO};
-
-	$("#sellall").click(function() {
-
+	$("#relistall").click(function() {
 		var checked_status = this.checked;
-
-		$("input[name=sell[]]").each(function() {
-
+		$("input[name='relist[]']").each(function() {
 			this.checked = checked_status;
-
 		});
-
 	});
-
-	$("#deleteall").click(function() {
-
+	$("#sellall").click(function() {
 		var checked_status = this.checked;
-
-		$("input[name=delete[]]").each(function() {
-
+		$("input[name='sell[]']").each(function() {
 			this.checked = checked_status;
-
 		});
-
+	});
+	$("#deleteall").click(function() {
+		var checked_status = this.checked;
+		$("input[name='delete[]']").each(function() {
+			this.checked = checked_status;
+		});
 	});
 
 	$("#processdel").submit(function() {
@@ -154,7 +146,8 @@ $(document).ready(function() {
       <!-- END items -->
       <!-- ENDIF -->
       <tr class="hidden-phone">
-        <td  colspan="6" style="text-align:right"><span class="muted"><small>{L_30_0102}</small></span></td>
+        <td  colspan="5" style="text-align:right"><span class="muted"><small>{L_30_0102}</small></span></td>
+        <td align="center"><input type="checkbox" id="relistall"></td>
         <td align="center"><input type="checkbox" id="sellall"></td>
         <td align="center"><input type="checkbox" id="deleteall"></td>
       </tr>
