@@ -851,7 +851,7 @@ $MSG['793'] = ' items you\'re bidding on are ending soon';
 $MSG['794'] = 'You have been outbid on %s items';
 $MSG['795'] = 'Display Settings Updated';
 $MSG['796'] = 'You have an outstanding payment of the final value fee for the item %s; your account will be suspended until this is paid. You can pay for this now at <a href="%s">Here</a>';
-$MSG['797'] = 'Enable sutitles';
+$MSG['797'] = 'Enable subtitles';
 $MSG['798'] = 'Allows sellers to add a subtitle to thier auction which will appear on all auction lists';
 $MSG['799'] = 'Enable Secondary Category';
 $MSG['800'] = 'Allows sellers to add their auction to multiple categories';
