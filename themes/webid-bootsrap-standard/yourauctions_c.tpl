@@ -134,7 +134,7 @@ $(document).ready(function() {
           <!-- ENDIF -->
           <!-- ENDIF -->
         </td>
-        <td width="10%"  align="center"><!-- IF items.B_CANRELIST -->
+        <td width="10%"  align="center"><!-- IF items.B_CANSSELL -->
           <input type="checkbox" name="sell[]" value="{items.ID}">
           <!-- ENDIF -->
         </td>
