@@ -48,10 +48,18 @@
     <td width="17%" align="right"> {a.w.BIDF} </td>
     <td  class="hidden-phone"  width="10%"> {a.w.QTY} </td>
     <td width="10%" nowrap="nowrap"><!-- IF a.w.B_PAID -->
-      {L_898}
+      <a class="btn btn-success disabled"><i class="icon-white icon-ok"></i> {L_898}</a>
       <!-- ELSE -->
-      <a href="{SITEURL}selling.php?paid={a.w.ID}{AUCID}">{L_899}</a>
+      <a href="{SITEURL}selling.php?paid={a.w.ID}{AUCID}" class="btn btn-danger"> {L_899}</a>
       <!-- ENDIF -->
+	  <form name="" method="post" action="{SITEURL}order_packingslip.php" id="fees" target="_blank">
+				<input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
+				<input type="hidden" name="pfval" value="{a.AUCTIONID}">
+				<input type="hidden" name="pfwon" value="{a.w.ID}">
+				<input type="hidden" name="user_id" value="{SELLER_ID}">
+				<br>
+				<button type="submit" class="btn btn-primary"><i class="icon-white icon-print"></i> Print Packingslip</button>
+			</form>
     </td>
   </tr>
   <!-- END w -->
