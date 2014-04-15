@@ -28,7 +28,7 @@
 	<div class="page-header">
         <h1>Picture uploader</h1>
 	<blockquote>
-	<p>{MAXPICS}</p>
+	<p>{MAXPICS} </p>
 	</blockquote>
 	</div>
     <br>
@@ -62,7 +62,7 @@
                 <span class="fileupload-loading"></span>
             </div>
             <!-- The global progress information -->
-            <div class="span5 fileupload-progress fade">
+            <div class="col-lg-5 fileupload-progress fade">
                 <!-- The global progress bar -->
                 <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar progress-bar-success" style="width:0%;"></div>
@@ -149,18 +149,11 @@
             <span class="size">{%=o.formatFileSize(file.size)%}</span>
         </td>
         <td>
-            {% if (file.deleteUrl) { %}
-                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-                    <i class="glyphicon glyphicon-trash"></i>
-                    <span>Delete</span>
-                </button>
-                <input type="checkbox" name="delete" value="1" class="toggle">
-            {% } else { %}
-                <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Cancel</span>
-                </button>
-            {% } %}
+            <button class="btn btn-danger delete" data-type="{%=file.delete_type%}" data-url="{%=file.delete_url%}"{% if (file.delete_with_credentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                <i class="icon-trash icon-white"></i>
+                <span>Delete</span>
+            </button>
+            <input type="checkbox" name="delete" value="1" class="toggle">
         </td>
     </tr>
 {% } %}
@@ -173,7 +166,7 @@
 <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
 <script src="js/load-image.min.js"></script>
 <!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/canvas-to-blob.min.js"></script>
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 <script src="js/bootstrap.min.js"></script>
