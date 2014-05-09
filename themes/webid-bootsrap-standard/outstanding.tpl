@@ -69,14 +69,18 @@
     <td><small>{to_pay.BID}</small></td>
     <td><small>{to_pay.SHIPPING}</small></td>
     <td>{to_pay.TOTAL}</td>
-    <td style="text-align: center;" class="alert"><form name="" method="post" action="{SITEURL}pay.php?a=2" id="fees" style="margin:0;">
+    <td style="text-align: center;" class="alert">
+    <form name="" method="post" action="{SITEURL}pay.php?a=2" id="fees" style="margin:0;">
         <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
         <input type="hidden" name="pfval" value="{to_pay.ID}">
         <input type="submit" name="Pay" value="{L_756}" class="pay btn btn-primary">
       </form></td>
-    <td style="text-align: center;" class="alert"><form name="" method="post" action="{SITEURL}order_print.php?id={topay.INVOICE}" id="fees" style="margin:0;">
+    <td style="text-align: center;" class="alert">
+    <form name="" method="post" action="{SITEURL}order_print.php?id={topay.INVOICE}" id="fees" style="margin:0;">
         <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
         <input type="hidden" name="pfval" value="{to_pay.ID}">
+        <input type="hidden" name="pfwon" value="{to_pay.WINID}">
+	    	<input type="hidden" name="user_id" value="{ID}">
         <input type="submit" type="button" value="{L_1058}" class="invoice btn btn-info">
       </form></td> 
   </tr>
