@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 		var checked_status = this.checked;
 
-		$("input[name=closenow[]]").each(function() {
+		$("input[name='closenow[]']").each(function() {
 
 			this.checked = checked_status;
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 		var checked_status = this.checked;
 
-		$("input[name=O_delete[]]").each(function() {
+		$("input[name='O_delete[]']").each(function() {
 
 			this.checked = checked_status;
 
