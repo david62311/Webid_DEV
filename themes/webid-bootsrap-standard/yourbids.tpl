@@ -34,6 +34,7 @@
     <tr>
       <th> {L_168} </th>
       <th> {L_461} </th>
+      <th> {L_116} </th>
       <th> {L_171} </th>
     </tr>
     <!-- BEGIN bids -->
@@ -47,6 +48,9 @@
         <p><small>{bids.PROXYBID}</small></p>
         <!-- ENDIF -->
       </td>
+      <td>
+			{bids.CBID}
+		  </td>
       <td> {bids.TIMELEFT} </td>
     </tr>
     <!-- END bids -->
